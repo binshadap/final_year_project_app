@@ -59,6 +59,10 @@ class WelcomeScreen extends StatelessWidget {
               height: 45,
               child: ElevatedButton(
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BlackPage()),
+                  );
                   // Add Bluetooth connection logic
                 },
                 child: Text(
@@ -75,6 +79,28 @@ class WelcomeScreen extends StatelessWidget {
               ),
             )
           ],
+        ),
+      ),
+    );
+  }
+}
+
+//second page
+
+// New page/widget representing the black page
+class BlackPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        title: Text('Black Page'),
+        backgroundColor: Colors.black,
+      ),
+      body: Center(
+        child: Text(
+          'This is the black page',
+          style: TextStyle(color: Colors.white),
         ),
       ),
     );
