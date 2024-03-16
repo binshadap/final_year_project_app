@@ -1,0 +1,14 @@
+# Analysis options specific to a Flutter project.
+
+# Lint rules to follow.
+include: package:flutter_lints/flutter.yaml
+
+# Analyze all files in the project.
+analyzer:
+  exclude:
+    - android/**
+    - ios/**
+    - build/**
+    - .dart_tool/**
+    - .packages
+    - pubspec.lock

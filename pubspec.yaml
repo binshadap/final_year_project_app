@@ -1,0 +1,14 @@
+name: your_flutter_app
+description: A Flutter application
+
+# The following line instructs pub to include assets from the assets directory.
+flutter:
+  assets:
+    - assets/welcome.png
+    # Add other assets here if needed
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Add any additional dependencies your app requires below
