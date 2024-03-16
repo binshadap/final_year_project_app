@@ -56,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
             // Connect Button
             SizedBox(
               width: 200.0, // Set the width of the button
-              height: 50,
+              height: 45,
               child: ElevatedButton(
                 onPressed: () {
                   // Add Bluetooth connection logic
